@@ -1,7 +1,6 @@
 package com.ankita.moviequick.activity.activity.activity.connection;
 
 
-
 import android.net.Uri;
 import android.util.Log;
 
@@ -13,9 +12,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Locale;
-import java.util.Scanner;
 
-import static android.support.constraint.motion.MotionScene.TAG;
 
 
 public class NetworkConnection {
@@ -29,6 +26,7 @@ public class NetworkConnection {
     private final static String PARAM_APPEND_TO_RESPONSE = "append_to_response";
     private final static String VALUE_APPEND_TO_RESPONSE = "videos,casts";
     private final static String PARAM_LANGUAGE = "language";
+    private static final String TAG = "Messagee";
 
     public static URL buildSearchUrl(String SearchQuery) {
         Uri builtUri = Uri.parse(SEARCH_BASE_URL).buildUpon()

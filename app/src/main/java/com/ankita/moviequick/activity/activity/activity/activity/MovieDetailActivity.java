@@ -1,22 +1,12 @@
 package com.ankita.moviequick.activity.activity.activity.activity;
 
-import android.annotation.TargetApi;
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
@@ -27,11 +17,15 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ankita.moviequick.R;
 import com.ankita.moviequick.activity.activity.activity.adapters.CastRecyclerViewAdapter;
-import com.ankita.moviequick.activity.activity.activity.connection.FavouritesContent;
 import com.ankita.moviequick.activity.activity.activity.connection.NetworkConnection;
 import com.ankita.moviequick.activity.activity.activity.model_class.Cast;
 import com.ankita.moviequick.activity.activity.activity.model_class.Movie;
@@ -99,8 +93,8 @@ public class MovieDetailActivity extends AppCompatActivity {
             txtBtnFavorites = getResources().getString(R.string.remove_from_favorites);
         } else {
             txtBtnFavorites = getResources().getString(R.string.add_to_favorites);
-        }*/
-        /*btnFavorites.setText(txtBtnFavorites);
+        }
+        btnFavorites.setText(txtBtnFavorites);
 
         btnFavorites.setOnClickListener(new View.OnClickListener() {
             int duration = Toast.LENGTH_LONG;
@@ -237,6 +231,7 @@ public class MovieDetailActivity extends AppCompatActivity {
         }
 
         Picasso.get().load(movie.getPosterLarge()).into(ivMoviePoster);
+
 
         Animation fadeInAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
         Animation moveUpAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move_up);

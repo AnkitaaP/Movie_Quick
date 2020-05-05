@@ -2,22 +2,20 @@ package com.ankita.moviequick.activity.activity.activity.activity;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ankita.moviequick.R;
 import com.ankita.moviequick.activity.activity.activity.adapters.MovieRecyclerViewAdapter;
-import com.ankita.moviequick.activity.activity.activity.connection.FavouritesContent;
 import com.ankita.moviequick.activity.activity.activity.model_class.Movie;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -30,19 +30,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
                     android:paddingTop="25dp"
+                    android:paddingRight="5dp"
                     android:text="@string/trending_movies"
                     android:textColor="#ffffff"
-                    android:textSize="20dp" />
+                    android:textSize="30dp"
+                    app:fontFamily="@font/aref_ruqaa_bold" />
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rv_movie_list_displayWall"
                     android:paddingTop="60dp" >
 
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
                 <!--<android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_movie_list"
                     android:layout_width="match_parent"
@@ -74,7 +75,7 @@
 
     </FrameLayout>
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_displayWall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -100,4 +101,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />-->
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.activity.activity.activity.FavoritesActivity">
+    tools:context=".activity.activity.activity.activity.FavouritesActivity">
 
     <FrameLayout
         android:id="@+id/content"
@@ -48,13 +48,13 @@
                     android:paddingRight="5dp"
                     android:paddingTop="60dp" />
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_movie_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="60dp">
 
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </RelativeLayout>
 
@@ -62,7 +62,7 @@
 
     </FrameLayout>
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_favourites"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -76,4 +76,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

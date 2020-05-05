@@ -18,7 +18,7 @@ public class Movie {
     private ArrayList<String> genres;
     private ArrayList<String> productionCompanies;
     private ArrayList<Cast> cast;
-    private final static String TMDB_IMG_BASE_URL = "http://image.tmdb.org/t/p/";
+    private final static String TMDB_IMG_BASE_URL = "https://image.tmdb.org/t/p/";
     private final static String YT_MOVIE_BASE_URL = "https://www.youtube.com/watch";
 
     public Movie() {
@@ -128,7 +128,7 @@ public class Movie {
      * @param posterPath String
      * The poster url path
      */
-    private void setPosters(String posterPath) {
+    public void setPosters(String posterPath) {
         if (posterPath != null) {
             posterSmall = TMDB_IMG_BASE_URL + "w200" + posterPath;
             posterLarge = TMDB_IMG_BASE_URL + "w500" + posterPath;

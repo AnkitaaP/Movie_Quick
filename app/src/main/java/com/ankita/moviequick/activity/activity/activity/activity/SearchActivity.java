@@ -1,9 +1,6 @@
 package com.ankita.moviequick.activity.activity.activity.activity;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,7 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.ankita.moviequick.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SearchActivity extends AppCompatActivity {
 

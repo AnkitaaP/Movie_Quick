@@ -6,7 +6,7 @@ public class People {
     String profilePath;
     private String profileUrl;
     public int id;
-    private final static String TMDB_IMG_BASE_URL = "http://image.tmdb.org/t/p/";
+    private final static String TMDB_IMG_BASE_URL = "https://image.tmdb.org/t/p/";
 
     People() {
     }

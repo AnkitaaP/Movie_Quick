@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -68,7 +69,8 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:textColor="#ffffff"
-                    android:textSize="32sp" />
+                    android:textSize="32sp"
+                    android:gravity="center_horizontal" />
 
                 <RatingBar
                     android:id="@+id/rb_movie_rating"
@@ -113,9 +115,9 @@
                     android:id="@+id/tv_movie_production_companies"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
                     android:textColor="#aaa"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="30dp"/>
+                    android:textSize="16sp" />
 
                 <Button
                     android:id="@+id/btn_trailer"
@@ -145,17 +147,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal"
                     android:text="@string/cast"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="22sp" />
+                    android:textSize="22sp"
+                    app:fontFamily="@font/aref_ruqaa_bold" />
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_cast"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
 
 
@@ -181,4 +185,4 @@
         </LinearLayout>
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
